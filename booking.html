@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="booking.css" />
+    
+
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <header class="stiky">
+      <div class="navb">
+          <div class="logo">
+              <img src="New folder/png-clipart-logo-film-brand-extra-cinema-seats-text-logo-removebg-preview (1).png" width="auto" height="80" alt="logo">
+          </div>
+          <ul>
+            <a href="home.html"><li>HOME</li></a>
+            <a href="Movies.html"><li>MOVIES</li></a>
+            <a href="Booking.html"><li>BOOKING</li></a>
+            <a href="about.html"><li>ABOUT US</li></a>
+          </ul>
+          
+              <a href="log in.html">
+              <button class="btn btn-primary">Log in</button>
+          </a>
+          </div>
+      </div>
+  </header>
+
+
+  <div class="movie-container">
+    <label>Pick a movie:</label>
+    <select id="movie">
+      <option value="10">Oppenheimer</option>
+      <option value="12">Avengers: Endgame</option>
+      <option value="8">Jawan</option>
+      <option value="9">Barbie</option>
+      <option value="9">John Wick: Chapter 4</option>
+      <option value="9">The Nun II</option>
+      <option value="9">Ant-Man and the Wasp: Quantumania</option>
+      <option value="9">Fast X </option>
+      <option value="9">Adhira </option>
+      <option value="9">Organs Trails</option>
+      <option value="9">Venom</option>
+      <option value="9">Flash</option>
+      <option value="9">Quantumania</option>
+      <option value="9">Ganapath</option>
+      <option value="9">Black Adam</option>
+      <option value="9">Spider-Man: No Way Home</option>
+    </select>
+  </div>
+
+    <div class="theater-container">
+      <label> SELECT A THEATER : </label>
+      <select id="theater">
+        <option value="1200">IMAX</option>
+        <option value="800">3D THEATER</option>
+        <option value="600">2D THEATER</option>
+        
+      </select>
+    </div>
+    <div class="theater-container">
+      <label> SELECT A DATE:</label>
+      
+
+        <input type="date" id="date">
+
+
+        
+     
+
+    </div>
+
+    <div class="theater-container">
+      <label> SELECT A TIME : </label>
+      <select id="theater">
+        <option >10.30 AM</option>
+        <option >2.30 PM</option>
+        <option >7.30 PM</option>
+        
+      </select>
+    </div>
+
+
+
+
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat">A1</div>
+        <div class="seat">A2</div>
+        <div class="seat">A3</div>
+        <div class="seat">A4</div>
+        <div class="seat">A5</div>
+        <div class="seat">A6</div>
+        <div class="seat">A7</div>
+        <div class="seat">A8</div>
+      </div>
+
+      <div class="row">
+        <div class="seat">B1</div>
+        <div class="seat">B2</div>
+        <div class="seat">B3</div>
+        <div class="seat">B4</div>
+        <div class="seat">B5</div>
+        <div class="seat">B6</div>
+        <div class="seat">B7</div>
+        <div class="seat">B8</div>
+      </div>
+      <div class="row">
+        <div class="seat">C1</div>
+        <div class="seat">C2</div>
+        <div class="seat">C3</div>
+        <div class="seat">C4</div>
+        <div class="seat">C5</div>
+        <div class="seat">C6</div>
+        <div class="seat">C7</div>
+        <div class="seat">C8</div>
+      </div>
+      <div class="row">
+        <div class="seat">D1</div>
+        <div class="seat">D2</div>
+        <div class="seat">D3</div>
+        <div class="seat">D4</div>
+        <div class="seat">D5</div>
+        <div class="seat">D6</div>
+        <div class="seat">D7</div>
+        <div class="seat">D8</div>
+      </div>
+      <div class="row">
+        <div class="seat">E1</div>
+        <div class="seat">E2</div>
+        <div class="seat">E3</div>
+        <div class="seat">E4</div>
+        <div class="seat">E5</div>
+        <div class="seat">E6</div>
+        <div class="seat">E7</div>
+        <div class="seat">E8</div>
+      </div>
+      <div class="row">
+        <div class="seat">F1</div>
+        <div class="seat">F2</div>
+        <div class="seat">F3</div>
+        <div class="seat">F4</div>
+        <div class="seat">F5</div>
+        <div class="seat">F6</div>
+        <div class="seat">F7</div>
+        <div class="seat">F8</div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> <br> Seat for a price of RS.<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <br>
+    <div class="form-group">
+      <button type="submit" class="book-now">Book Now</button>
+  </div>
+  <a href="home.html" class="back-to-home-button">Back to Home</a>
+  <script src="booking.js"></script>
+  </body>
+</html>
